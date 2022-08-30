@@ -61,12 +61,12 @@ Run the app module.
 dependencies {
     implementation(group: 'sg.com.temasys.skylink.sdk',
             name: 'skylink_sdk',
-            version: '2.3.0-RELEASE',
+            version: '2.3.1-RELEASE',
             ext: 'aar') {
         transitive = true
+        exclude group: 'sg.com.temasys.skylink.sdk', module: 'skylink_message_cache_sdk'
     }
-
-    implementation 'sg.com.temasys.skylink.sdk:skylink_message_cache_sdk:1.0.0-RELEASE'
+    implementation('sg.com.temasys.skylink.sdk:skylink_message_cache_sdk:1.0.1-RELEASE')
 }
 ```
 
