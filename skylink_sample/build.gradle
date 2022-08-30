@@ -31,12 +31,12 @@ dependencies {
 
     compileOnly(group: 'sg.com.temasys.skylink.sdk',
             name: 'skylink_sdk',
-            version: '2.3.0-RELEASE',
+            version: '2.3.1-RELEASE',
             ext: 'aar') {
         transitive = true
+        exclude group: 'sg.com.temasys.skylink.sdk', module: 'skylink_message_cache_sdk'
     }
-
-    compileOnly 'sg.com.temasys.skylink.sdk:skylink_message_cache_sdk:1.0.0-RELEASE'
+    compileOnly('sg.com.temasys.skylink.sdk:skylink_message_cache_sdk:1.0.1-RELEASE')
 
     testImplementation 'junit:junit:4.13.2'
 
